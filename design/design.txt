@@ -1,0 +1,45 @@
+Design
+
+My bacteria simulator aims to simulate population dynamics at
+a very basic level using only three different kinds of species, each
+with different qualities. The simulation plots the populations
+of all the species and displays all the data values in a panel.
+
+In this simulator, I model a similar flash based game called
+Bacteria Simulator. I used many concepts from this simulation in my own.
+Things that I liked from the design were the way that grass had different 
+transparencies of green to denote their energy level; I also thought the 
+graph was very helpful. Something I would have liked to have seen from 
+this model that I have included in my own is some sort of evolution mechanic,
+which I have implemented with mutations of speed and vision. I also displayed 
+average speeds and visions to give the user a better idea of what is going 
+on in terms of evolution.
+
+The structure of the program consists of a Simulation class that
+handles the pygame mainloop and mouse and key events. The PetriDish
+class handles the implementation of the simulation itself.
+There are also DataPanel and ControlPanel classes, which are modules 
+that display data and control functions, respectively. All of the properties 
+of the bacteria are contained within their respective classes (Herbivore, 
+Predator, and Omnivore), which are all subclasses of the Bacterium class. 
+Grass is a separate class, where each instance of Grass is a separate cell 
+of the grid. Graphing is done by the Graph class.
+
+The layout of the program consists of three distinct sections: the petri dish, where
+all the bacteria events occur; the control panel, where the user interacts
+with the program; and the data panel, where all the data is displayed. This
+separation of function allowed for great clarity both in the user interface
+and in the code itself (where each of these components has its own class).
+
+All the bacteria and grass are sprites that are contained in groups. These
+groups (implemented by pygame) efficiently handle collision events to where
+there can be hundreds of interactions to check for at a given moment. The
+variables of each bacterium are decayRate, energyOfDivision, radiusOfVision,
+speed, and chaseSpeed. Balancing these variables was done by trial and
+error and fitting the population curves to classic population graphs that one
+would find in a biology textbook. The petri dish of grass is a 2d list of
+Grass objects. The graph is created by making a list of all
+the data points and connecting all the points with lines. Scrolling is
+achieved by popping the data values from the front of the list once the list
+reaches a maximum length. 
+

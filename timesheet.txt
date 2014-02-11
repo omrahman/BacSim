@@ -1,0 +1,30 @@
+# Omar Rahman, andrewid: omarr
+
+timesheet.txt
+
+11/17: 3 hours - installing packages/getting them to work      
+11/19: 2 hours - working through tutorials     
+11/20: 1 hour  - completing tutorials    
+11/20: 3 hours - beginning grass growth/bacteria movement
+11/21: 1 hour  - cleaning up code
+11/22: 3 hours - improved on grass growth, learning and applying alpha 
+11/23: 3 hours - making things eat one another, learning and applying the
+                 Group class 
+11/24: 4 hours - bacteria eating grass, fixing grass regeneration,
+                 adding bacterial division, debugging, polish
+11/25: 4 hours - created a control panel and buttons
+11/26: 4 hours - made data panel and live values
+11/27: 3 hours - tried working matplotlib, ditched it to make own Graph class
+11/28: 2 hours - tweaking variables and graphing. reworked the functioning
+                  of grass
+                 to improve efficiency
+11/29: 1 hour  - tweaks
+11/30: 1 hour  - tweaks
+12/01: 3 hours - added chasing/fleeing mechanism
+12/02: 4 hours - implented mutations/evolution; tweaked variables, cleaned
+                  up code,
+                 added more DataPanel variables
+12/03: 2 hours - more tweaks, added latency in eating for predators
+12/04: 4 hours - modified buttons to display when they are selected; cleanup
+                  and tweaks
+Total: 48 hours
